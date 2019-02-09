@@ -1,1 +1,10 @@
 <h1>Redirect Cucumber</h1>
+
+<%= link_to  "Click Me", "", :id => "js-click-me" %>
+
+<script>
+$(document).click("#js-click-me", function(event){
+    even.preventDefault();
+    $("body").html("Link Clicked")
+});
+</script>
